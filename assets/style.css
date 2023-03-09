@@ -1,0 +1,21 @@
+const form = document.querySelector('form');
+const taskInput = do
+
+
+form.addEventListener('submit',addTask);
+function addTask(e){
+
+    if(taskInput.value === '' ){
+
+        msg.classList.add('error')
+        msg.textContent ='Fill the task field'
+        
+        setTimeout(function(){
+            msg.classList.add('error')
+        },2000)
+    } else{
+        console.log(taskInput.value)
+    }
+  
+    e.preventDefault()
+}
